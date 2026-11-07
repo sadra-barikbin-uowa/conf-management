@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="مؤتمر التقييم المؤسسي في عصر التحول الرقمي والذكاء الاصطناعي 2026 - جامعة وارث الأنبياء" />
+    <meta name="theme-color" content="#0b254e" />
+    <title>مؤتمر التقييم المؤسسي في عصر التحول الرقمي والذكاء الاصطناعي 2026</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+    <script>
+      /* apply saved theme and language before first paint to avoid a flash */
+      try {
+        var th = localStorage.getItem('conf-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var lg = localStorage.getItem('conf-lang') || 'ar';
+        document.documentElement.dataset.theme = th;
+        document.documentElement.lang = lg;
+        document.documentElement.dir = lg === 'ar' ? 'rtl' : 'ltr';
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="AI conference icon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="50%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#dbeafe" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <rect x="10" y="10" width="108" height="108" rx="22" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+
+  <g fill="none" stroke="#dbeafe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <circle cx="27" cy="27" r="5" fill="#dbeafe"/>
+    <circle cx="101" cy="27" r="5" fill="#dbeafe"/>
+    <circle cx="27" cy="101" r="5" fill="#dbeafe"/>
+    <circle cx="101" cy="101" r="5" fill="#dbeafe"/>
+    <path d="M64 18V10M64 118V110M18 64H10M118 64H110"/>
+    <path d="M27 27L40 40M101 27L88 40M27 101L40 88M101 101L88 88"/>
+  </g>
+
+  <path d="M33 92L54 36H74L95 92H81L74 72H54L48 92H33ZM58 61H70L66 49L58 61Z" fill="white"/>
+  <rect x="56" y="32" width="16" height="64" rx="6" fill="white" opacity="0.92"/>
+
+  <path d="M20 18C28 12 36 10 44 10" stroke="url(#shine)" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+</svg>
