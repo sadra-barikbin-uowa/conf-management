@@ -8,7 +8,6 @@ import heroImage2 from '../pic8.jpg'
 import heroImage3 from '../imam-hussein-shrine.jpg'
 import { usePrefs } from './context.jsx'
 import { Reveal, SectionHead, CountUp, Magnetic, TiltCard, Icon, stagger, item, ease } from './components/ui.jsx'
-import ParticleField from './components/ParticleField.jsx'
 import {
   EVENT, EMAIL, TITLE, UI, DATES, AXES, GOALS, UNIS, SUPPORTERS, RULES, SPEC, COMMITTEES, CONTACTS,
 } from './data.js'
@@ -182,7 +181,6 @@ function Hero({ onSubmit }) {
         </AnimatePresence>
         <div className="hero-overlay" />
       </div>
-      <ParticleField />
       <div className="hero-glow" aria-hidden="true" />
       <motion.div className="wrap hero-in" style={{ y, opacity }}>
         <h1 key={lang}>
@@ -427,10 +425,9 @@ function Gallery() {
               whileHover={{ y: -6, scale: 1.01 }}
               whileTap={{ scale: 0.99 }}
               onClick={() => setSelected(src)}
-              aria-label={`${t(UI.gallery)} ${index + 1}`}
+              aria-label={t(UI.gallery)}
             >
-              <img src={src} alt={`${t(UI.gallery)} ${index + 1}`} loading="lazy" />
-              <span>{`${t(UI.gallery)} ${index + 1}`}</span>
+              <img src={src} alt={t(UI.gallery)} loading="lazy" />
             </motion.button>
           ))}
         </motion.div>
