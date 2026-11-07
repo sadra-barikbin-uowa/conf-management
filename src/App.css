@@ -297,6 +297,10 @@ nav.solid{background:rgba(8,26,47,.88);backdrop-filter:blur(14px);box-shadow:0 8
 footer{background:var(--navy-3);color:#9fb3d1;text-align:center;padding:48px 0 calc(40px + env(safe-area-inset-bottom,0px))}
 .footer-logo{width:68px;height:68px;object-fit:contain;padding:8px;border-radius:50%;background:#fff;margin-bottom:10px}
 footer b{display:block;color:var(--gold-2);font-size:1.15rem;margin-bottom:6px}
+.footer-socials{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 16px;margin-top:18px}
+.footer-socials a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1px solid rgba(254,198,25,.3);background:rgba(255,255,255,.04);color:#eaf1ff;transition:transform .2s ease, border-color .2s ease, background .2s ease}
+.footer-socials a:hover{transform:translateY(-2px);border-color:rgba(254,198,25,.6);background:rgba(254,198,25,.08)}
+.footer-socials img{display:block;width:18px;height:18px;object-fit:contain}
 
 @media(max-width:700px){section{padding:72px 0}}
 @media(prefers-reduced-motion:reduce){

@@ -3,6 +3,12 @@ import { AnimatePresence, motion, useScroll, useSpring, useTransform } from 'fra
 import { Sun, Moon, Languages, Menu, X, ArrowUp, Check, Copy, Sparkles, Send, ChevronDown, Clock, Flag } from 'lucide-react'
 import './App.css'
 import logo from './assets/warith-logo.png'
+import whatsappIcon from '../links/whatsapp.png'
+import linkedinIcon from '../links/linkedin.png'
+import youtubeIcon from '../links/youtube.png'
+import instagramIcon from '../links/instagram.png'
+import xIcon from '../links/x.png'
+import facebookIcon from '../links/facebook.png'
 import heroImage1 from '../pic4.jpg'
 import heroImage2 from '../pic8.jpg'
 import heroImage3 from '../imam-hussein-shrine.jpg'
@@ -76,7 +82,7 @@ function Nav() {
         <div className="links">{links}</div>
         <div className="tools">
           <button type="button" className="icon-btn lang-btn" onClick={toggleLang} aria-label={t(UI.lang)}>
-            <Languages size={18} /><span>{t(UI.lang)}</span>
+            <span>{t(UI.lang)}</span>
           </button>
           <button type="button" className="icon-btn" onClick={toggleTheme} aria-label={t(UI.theme)}>
             <AnimatePresence mode="wait" initial={false}>
@@ -606,6 +612,26 @@ export default function App() {
           <img src={logo} alt="" className="footer-logo" />
           <b>{t(TITLE)}</b>
           <p>{t(UI.footer)}</p>
+          <div className="footer-socials">
+            <a href="https://api.whatsapp.com/message/TF6MKFZWBM3HC1?autoload=1&app_absent=0" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <img src={whatsappIcon} alt="WhatsApp" />
+            </a>
+            <a href="https://iq.linkedin.com/company/university-of-warith-al-anbiyaa?_l=ar_AE" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <img src={linkedinIcon} alt="LinkedIn" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCJuC2L8xYFBJUyDMu2-TMCw" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <img src={youtubeIcon} alt="YouTube" />
+            </a>
+            <a href="https://www.instagram.com/uowa.iq" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+            <a href="https://x.com/WarithALanbiya" target="_blank" rel="noreferrer" aria-label="X">
+              <img src={xIcon} alt="X" />
+            </a>
+            <a href="https://www.facebook.com/uowa.edu" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <img src={facebookIcon} alt="Facebook" />
+            </a>
+          </div>
         </div>
       </footer>
       <BackToTop />
