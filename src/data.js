@@ -21,7 +21,7 @@ export const TITLE = {
 };
 
 export const UI = {
-  brand: { ar: "مؤتمر التقييم المؤسسي 2026", en: "Institutional Evaluation 2026" },
+  brand: { ar: "مؤتمر التقييم المؤسسي ", en: "Institutional Evaluation " },
   nav: {
     dates: { ar: "المواعيد", en: "Dates" },
     axes: { ar: "المحاور", en: "Topics" },
@@ -90,7 +90,7 @@ export const UI = {
   lang: { ar: "English", en: "عربي" },
   menu: { ar: "القائمة", en: "Menu" },
   top: { ar: "إلى الأعلى", en: "Back to top" },
-  footer: { ar: "جامعة وارث الأنبياء (عليه السلام) · كلية الإدارة والاقتصاد · 2026", en: "University of Warith Al-Anbiyaa · College of Administration & Economics · 2026" },
+  footer: { ar: "جميع الحقوق محفوظة - جامعة وارث الأنبياء - قسم الحاسبة الإلكترونية - شعبة البرمجيات", en: "All rights reserved - University of Warith Al-Anbiyaa - Electronic Computing Department - Software Division" },
   form: {
     title: { ar: "نموذج التسجيل", en: "Registration form" },
     sub: { ar: "املأ بياناتك وسنتواصل معك بخصوص بحثك", en: "Fill in your details and we will contact you about your paper" },
