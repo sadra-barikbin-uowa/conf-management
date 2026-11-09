@@ -90,7 +90,7 @@ export const UI = {
   lang: { ar: "English", en: "عربي" },
   menu: { ar: "القائمة", en: "Menu" },
   top: { ar: "إلى الأعلى", en: "Back to top" },
-  footer: { ar: "جميع الحقوق محفوظة - جامعة وارث الأنبياء - قسم الحاسبة الإلكترونية - شعبة البرمجيات", en: "All rights reserved - University of Warith Al-Anbiyaa - Electronic Computing Department - Software Division" },
+  footer: { ar: "جميع الحقوق محفوظة - جامعة وارث الأنبياء - مركز الحاسبة الإلكترونية - شعبة البرمجيات", en: "All rights reserved - University of Warith Al-Anbiyaa - Electronic Computing center - Software Division" },
   form: {
     title: { ar: "نموذج التسجيل", en: "Registration form" },
     sub: { ar: "املأ بياناتك وسنتواصل معك بخصوص بحثك", en: "Fill in your details and we will contact you about your paper" },
