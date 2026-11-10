@@ -159,7 +159,7 @@ export const UI = {
   goals: { ar: "أهداف المؤتمر", en: "Objectives" },
   gallery: { ar: "معرض الصور", en: "Photo gallery" },
   unis: { ar: "الجامعات المشاركة", en: "Participating universities" },
-  supporters: { ar: "الجهات الساندة", en: "Supporters" },
+  supporters: { ar: "الجهة المقيمة", en: "Host institution" },
   rulesTitle: { ar: "شروط المشاركة", en: "Participation rules" },
   formatTitle: { ar: "صيغة الإرسال", en: "Submission format" },
   formatNote: {
@@ -471,6 +471,12 @@ export const SUPPORTERS = [
     ar: "جامعة وارث الأنبياء",
     en: "WARITH AL-ANBIYAA UNIVERSITY",
     href: "https://uowa.edu.iq/arabic",
+    logo: warithLogo,
+  },
+  {
+    ar: "قسم تطوير الموارد البشرية",
+    en: "Human Resources Development Department",
+    href: "#",
     logo: warithLogo,
   },
   {
