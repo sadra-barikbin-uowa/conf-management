@@ -669,7 +669,7 @@ function About() {
               <h3 className="sub-title">{t(title)}</h3>
               {k === 0 ? (
                 <motion.div
-                  className="uni-grid"
+                  className="uni-grid uni-grid--unis"
                   variants={stagger}
                   initial="hidden"
                   whileInView="show"
