@@ -185,7 +185,7 @@ export const UI = {
   menu: { ar: "القائمة", en: "Menu" },
   top: { ar: "إلى الأعلى", en: "Back to top" },
   footer: {
-    ar: "جامعة وارث الأنبياء (عليه السلام) · كلية الإدارة والاقتصاد · 2026",
+    ar: "جميع الحقوق محفوظة جامعة وارث الأنبياء -مركز الحاسبة الإلكترونية - شعبة البرمجيات",
     en: "University of Warith Al-Anbiyaa · College of Administration & Economics · 2026",
   },
   form: {
