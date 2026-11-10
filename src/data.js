@@ -159,7 +159,8 @@ export const UI = {
   goals: { ar: "أهداف المؤتمر", en: "Objectives" },
   gallery: { ar: "معرض الصور", en: "Photo gallery" },
   unis: { ar: "الجامعات المشاركة", en: "Participating universities" },
-  supporters: { ar: "الجهة المقيمة", en: "Host institution" },
+  supporters: { ar: "الجهات المقيمة", en: "Host institutions" },
+  patrons: { ar: "الجهات الراعية", en: "Supporting institutions" },
   rulesTitle: { ar: "شروط المشاركة", en: "Participation rules" },
   formatTitle: { ar: "صيغة الإرسال", en: "Submission format" },
   formatNote: {
@@ -462,12 +463,6 @@ export const UNIS = [
 ];
 export const SUPPORTERS = [
   {
-    ar: "العتبة الحسينية المقدسة",
-    en: "Imam Hussain Holy Shrine",
-    href: "https://imamhussain.org/arabic",
-    logo: shrineLogo,
-  },
-  {
     ar: "جامعة وارث الأنبياء",
     en: "WARITH AL-ANBIYAA UNIVERSITY",
     href: "https://uowa.edu.iq/arabic",
@@ -484,6 +479,16 @@ export const SUPPORTERS = [
     en: "College of Administration and Economics",
     href: "https://uowa.edu.iq/arabic/cae",
     logo: warithLogo,
+    featured: true,
+  },
+];
+
+export const PATRONS = [
+  {
+    ar: "العتبة الحسينية المقدسة",
+    en: "Imam Hussain Holy Shrine",
+    href: "https://imamhussain.org/arabic",
+    logo: shrineLogo,
     featured: true,
   },
 ];
