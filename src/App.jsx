@@ -20,6 +20,7 @@ import {
   ChevronDown,
   Clock,
   Flag,
+  ArrowUpRight,
 } from "lucide-react";
 import "./App.css";
 import logo from "./assets/warith-logo.png";
@@ -634,7 +635,7 @@ function Submit({ onEmail }) {
 
 /* ============ ABOUT ============ */
 function About() {
-  const { t } = usePrefs();
+  const { t, lang } = usePrefs();
   return (
     <section id="about">
       <div className="wrap">
@@ -663,7 +664,6 @@ function About() {
           {[
             [UI.unis, UNIS],
             [UI.supporters, SUPPORTERS],
-            [UI.patrons, PATRONS],
           ].map(([title, list], k) => (
             <Reveal key={k} className="partner-block" delay={k * 0.1}>
               <h3 className="sub-title">{t(title)}</h3>
@@ -716,6 +716,44 @@ function About() {
               )}
             </Reveal>
           ))}
+
+          <Reveal className="partner-block partner-block--patron" delay={0.2}>
+            <div className="patron-banner">
+              <span className="patron-eyebrow">
+                <Sparkles size={16} />
+                {t(UI.patrons)}
+              </span>
+              <div className="patron-list">
+                {PATRONS.map((p, i) => (
+                  <motion.a
+                    key={i}
+                    href={p.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="patron-card"
+                    whileHover={{ y: -6 }}
+                    whileTap={{ scale: 0.99 }}
+                  >
+                    <span className="patron-ring">
+                      <img src={p.logo} alt={t(p)} />
+                    </span>
+                    <span className="patron-text">
+                      <strong>{t(p)}</strong>
+                      <small>
+                        {lang === "ar"
+                          ? "راعٍ رسمي للمؤتمر"
+                          : "Official patron"}
+                      </small>
+                    </span>
+                    <span className="patron-cta">
+                      {lang === "ar" ? "زيارة الموقع" : "Visit website"}
+                      <ArrowUpRight size={16} />
+                    </span>
+                  </motion.a>
+                ))}
+              </div>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>
