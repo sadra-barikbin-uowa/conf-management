@@ -21,6 +21,7 @@ import {
   Clock,
   Flag,
   ArrowUpRight,
+  Mail,
 } from "lucide-react";
 import "./App.css";
 import logo from "./assets/warith-logo.png";
@@ -616,16 +617,19 @@ function Submit({ onEmail }) {
               ))}
             </div>
             <div className="note">{t(UI.formatNote)}</div>
-            <div className="email-highlight">
-              <span>
-                {lang === "ar"
-                  ? "اضغط على البريد للنسخ"
-                  : "Click the email to copy"}
+            <button type="button" className="email-highlight" onClick={onEmail}>
+              <span className="email-icon">
+                <Mail size={20} />
               </span>
-              <button type="button" className="link-btn" onClick={onEmail}>
-                {EMAIL}
-              </button>
-            </div>
+              <span className="email-copy">
+                <small>{lang === "ar" ? "أرسل بحثك إلى" : "Send your paper to"}</small>
+                <strong dir="ltr">{EMAIL}</strong>
+              </span>
+              <span className="email-cta">
+                <Copy size={16} />
+                {lang === "ar" ? "نسخ البريد" : "Copy email"}
+              </span>
+            </button>
           </Reveal>
         </div>
       </div>
@@ -708,6 +712,12 @@ function About() {
                       variants={item}
                       whileHover={{ y: -4, scale: 1.01 }}
                     >
+                      {u.featured && (
+                        <span className="uni-badge">
+                          <Sparkles size={13} />
+                          {lang === "ar" ? "الجهة المنظمة" : "Organizer"}
+                        </span>
+                      )}
                       <img src={u.logo} alt={t(u)} />
                       <span>{t(u)}</span>
                     </motion.a>
