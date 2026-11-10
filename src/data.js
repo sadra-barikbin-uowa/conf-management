@@ -22,8 +22,8 @@ export const TITLE = {
 
 export const UI = {
   brand: {
-    ar: "مؤتمر التقييم المؤسسي 2026",
-    en: "Institutional Evaluation 2026",
+    ar: "مؤتمر التقييم المؤسسي ",
+    en: "Institutional Evaluation Conference",
   },
   nav: {
     dates: { ar: "المواعيد", en: "Dates" },
